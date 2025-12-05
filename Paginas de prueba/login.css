@@ -1,1 +1,156 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #0F141F;
+    color: #E4E7EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.card {
+    background: #1C2230;
+    width: 80%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 45%;
+    text-align: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.brand-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+}
+
+.blue {
+    color: #5C8FFF;
+}
+
+.pink {
+    color: #FF5DA2;
+}
+
+.slogan {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #A0A7BA;
+}
+
+.theme-toggle {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #FF5DA2;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.right {
+    width: 45%;
+}
+
+.right .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FF5DA2;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #2a3243;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    color: #E4E7EE;
+    font-size: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 14px;
+    background: #5C8FFF;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.register {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #A0A7BA;
+}
+
+.register a {
+    color: #5C8FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body.light {
+    background: #E2E6EB;
+    color: #1E2433;
+}
+
+body.light .card {
+    background: #F5F7FA;
+}
+
+body.light input {
+    background: #e1e4e8;
+    color: #1E2433;
+}
+
+body.light .btn {
+    background: #4F7FFF;
+}
+
+body.light .right .title {
+    color: #FF4F8B;
+}
+
+body.light .register a {
+    color: #4F7FFF;
+}
+
+body.light .theme-toggle {
+    color: #FF4F8B;
+}
+
+body.light .blue {
+    color: #4F7FFF;
+}
+
+body.light .pink {
+    color: #FF4F8B;
+}
