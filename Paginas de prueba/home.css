@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #0F141F;
+    color: #E4E7EE;
+}
+
+.header {
+    width: 97.%;
+    background: #1C2230;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    width: 45px;
+    height: 45px;
+}
+
+.brand-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+}
+
+.blue {
+    color: #5C8FFF;
+}
+
+.pink {
+    color: #FF5DA2;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    width: 220px;
+    background: #1C2230;
+    height: calc(100vh - 70px);
+    padding: 20px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+    font-size: 15px;
+    color: #E4E7EE;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: .2s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background: #2a3243;
+}
+
+#themeToggle {
+    display: none;
+}
+
+.toggleSwitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background-color: #5C5C5C;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.toggleSwitch::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: .25s;
+    box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.26);
+    border: 5px solid white;
+}
+
+#themeToggle:checked+.toggleSwitch {
+    background-color: #5C8FFF;
+}
+
+#themeToggle:checked+.toggleSwitch::after {
+    transform: translateX(100%);
+    background-color: white;
+}
+
+body.light {
+    background: #E2E6EB;
+    color: #1E2433;
+}
+
+body.light .header,
+body.light .sidebar {
+    background: #F5F7FA;
+}
+
+body.light .sidebar ul li {
+    color: #1E2433;
+}
+
+body.light .sidebar ul li:hover,
+body.light .sidebar ul li.active {
+    background: #e1e4e8;
+}
+
+body.light .blue {
+    color: #4F7FFF;
+}
+
+body.light .pink {
+    color: #FF4F8B;
+}
